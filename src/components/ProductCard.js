@@ -30,7 +30,7 @@ import Cart from './Cart'
 function ProductCard({product}) {
   return (
     <Card className='card-root'>
-      <CardMedia className='card-media' image='' title={product.name}  />
+      <CardMedia className='card-media' image='' component='img' title={product.name}  />
       <CardContent>
         <div className='card-content' >
           <Typography variant="h5" gutterBottom >
