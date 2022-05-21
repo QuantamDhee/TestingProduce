@@ -29,10 +29,10 @@ import Cart from './Cart'
 
 function ProductCard({product}) {
   return (
-    <Card className={classes.root}>
-      <CardMedia className={classes.media} image='' title={product.name}  />
+    <Card className='card-root'>
+      <CardMedia className='card-media' image='' title={product.name}  />
       <CardContent>
-        <div className={classes.cardContent} >
+        <div className='card-content' >
           <Typography variant="h5" gutterBottom >
             {product.name}
           </Typography>
@@ -40,13 +40,13 @@ function ProductCard({product}) {
             {product.price}
           </Typography>
         </div>
-        <Typography variant="h2" color="textSecondary">
+        <Typography variant="h8" color="textSecondary">
           {product.description}
         </Typography>
       </CardContent>
-      <CardActions disableSpacing className='classes.cardActions' >
+      <CardActions disableSpacing className='card-actions' >
         <Button aria-label='Add to cart'>
-          <Cart />
+          {/* <Cart /> */}
         </Button>
       </CardActions>
       {/* <CardContent>
