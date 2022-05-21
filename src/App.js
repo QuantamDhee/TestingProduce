@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
+        {/* <Header /> */}
         <Navigation />
         <main className="container">
             <Routes>

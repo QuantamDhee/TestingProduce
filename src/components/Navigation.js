@@ -6,14 +6,14 @@ function Navigation() {
         <nav className="navbar navbar-expand-lg bg-light ">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            Navbar
+            BallesterosProduce
           </Link>
           <div className="navbar-collapse">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link active" to="/">
+                {/* <Link className="nav-link active" to="/">
                   Home
-                </Link>
+                </Link> */}
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/about">
