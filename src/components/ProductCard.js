@@ -16,6 +16,7 @@ import CardMedia from '@mui/material/CardMedia'
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { ClassNames } from '@emotion/react';
+import Cart from './Cart'
 
 // const bull = (
 //   <Box
@@ -40,8 +41,14 @@ function ProductCard({product}) {
           </Typography>
         </div>
         <Typography variant="h2" color="textSecondary">
+          {product.description}
         </Typography>
       </CardContent>
+      <CardActions disableSpacing className='classes.cardActions' >
+        <Button aria-label='Add to cart'>
+          <Cart />
+        </Button>
+      </CardActions>
       {/* <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Word of the Day
